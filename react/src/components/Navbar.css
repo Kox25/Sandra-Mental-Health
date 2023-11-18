@@ -1,0 +1,28 @@
+.Nav
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #b9f7eb;
+    color: white;
+    border-radius: 4px ;
+    box-shadow: -5px 0px 10px -2px #01010149;
+    display: flex;
+    justify-content: space-between;
+}
+.logoImage 
+{
+    border-radius: 5px ;
+    box-shadow: -5px 0px 10px -2px #01010149;
+}
+
+
+.part {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+.sa
+{
+    display: flex;
+    justify-content: space-between;
+}

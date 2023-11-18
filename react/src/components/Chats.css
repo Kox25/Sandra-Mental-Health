@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #1c627e;
+}
+
+ 
+.pos {
+  position: relative;
+  top: 40px;
+}
+
+.paragraph
+{
+  color:#1c627e;
+}
+
+.chat-section {
+  box-shadow: -5px 0px 10px -2px #01010149;
+  border-radius: 10px;
+  background-color: #558da39e;
+}
+
+.chatList {
+  height: 370px;
+  /* Set the desired height for the chat section */
+  overflow-y: auto;
+  /* Add vertical scrollbar when content overflows */
+  /* Customize the scrollbar */
+  scrollbar-width: 5px;
+  scrollbar-color: #888888 #f4f4f4;
+}
+
+/* Track */
+.chatList::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+
+/* Handle */
+.chatList::-webkit-scrollbar-thumb {
+  background-color: #888888;
+  border-radius: 5px;
+  width: 5px;
+}
+
+/* Handle on hover */
+.chatList::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+
+}
+
+img {
+  border-radius: 50%;
+}
+
+.li {
+  background-color: white;
+  width: 95%;
+  cursor: pointer;
+}
+
+.trash {
+  cursor: pointer;
+  color: #fff;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.trash:hover {
+  color: darkslateblue;
+}
+
+
+
+@keyframes mover {
+
+  0% {
+    transform: translateY(-90px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+@-webkit-keyframes mover {
+
+  0% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+@-moz-keyframes mover {
+
+  0% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+@-o-keyframes mover {
+
+  0% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+.cube {
+  height: 50px;
+  animation: mover 1s infinite alternate !important;
+}
+
+.star {
+  height: 50px;
+  opacity: 0.3;
+  animation: mover 2s infinite alternate !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 15px;
+}
+
+::webkit-scrollbar-thumb:focus {
+  width: 23px;
+  background: #fff7da;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fff7da;
+}

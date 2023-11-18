@@ -1,0 +1,75 @@
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.formm {
+  background-color: rgb(111, 183, 255);
+  border: 10px solid rgb(111, 183, 255);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formm input {
+  height: -10px;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.formm .form-check-input {
+  margin-right: 5px;
+}
+
+.formm .form-check-input + label {
+  margin-right: 10px;
+  margin-bottom:15px ;
+}
+
+.formm button {
+  margin-left: 110px;
+  margin-right: 100px;
+  width: 240px;
+  background-color: white;
+  color: rgb(31, 143, 255);
+  text-align: center;
+  
+}
+
+.h3 {
+  color: #eee;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.btn-primary:hover {
+  background-color: rgba(39, 7, 69, 0.653);
+  /* Set the background color to orange on hover */
+  color: white;
+  /* Change the text color to white on hover */
+}
+
+.color
+{
+  color:rgb(31, 143, 255);
+  font-weight: bold;
+  position: relative;
+  top: -500px;
+}
+
+.error
+{
+  border-radius: 2px blue;
+  background-color: red;
+  color: white;
+  margin-top: -30px;
+}
+
+ 

@@ -1,0 +1,11 @@
+.bg {
+    background-image: url(../assets/backgroundPRO.png);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }

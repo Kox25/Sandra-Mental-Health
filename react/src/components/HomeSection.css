@@ -1,0 +1,124 @@
+.main
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+}
+
+.video
+{
+    height: 500px;
+    width: 660px;
+    position: relative;
+    left: 128px;
+    border-radius: 5px;
+}
+
+.content
+{
+    border: 1px solid;
+    box-shadow: -5px 0px 10px -2px #01010149;
+    border-radius: 5px;
+    background-color: #558da39e;
+    color: white;
+    position: relative;
+    top: 50px;
+    right: 62px;
+    height: 280px;
+    width: 440px;
+    margin-top: 50px;
+    
+}
+
+.h2{
+    margin-top: 15px;
+}
+
+.h4
+{
+    text-align: left;
+    margin-left: 20px ;
+}
+
+
+.btn
+{
+    margin-top: 30px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    right: 120px;
+}
+
+@keyframes mover {
+  
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+ }
+
+ @-webkit-keyframes mover {
+  
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+ }
+
+ @-moz-keyframes mover {
+  
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+ }
+
+ @-o-keyframes mover 
+ {
+  
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+ }
+
+
+.cube{
+    top:18%;
+    left: 30%;
+    rotate: 45deg;
+    opacity: 0.2;
+    animation: mover 2s infinite alternate !important;
+ }
+
+ .line{
+    top:-00%;
+    left:50%;
+    rotate: 90 deg;
+    opacity: 0.2; 
+    animation: mover 2s infinite alternate !important;
+ }
+
+ .square{
+    rotate: 45deg;
+    position: absolute;
+    top:75%;
+    right: 57%;    
+    opacity: 0.2;
+    animation: mover 2s infinite alternate !important; 
+ }

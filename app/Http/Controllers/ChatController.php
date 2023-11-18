@@ -236,7 +236,7 @@ class ChatController extends Controller
             return $this->showChat($user_id);
         }
     
-        return response()->json(['message' => 'الدردشة غير موجودة.'], 404);
+        return response()->json(['message' => 'this chat does not exist'], 404);
     }
 
 

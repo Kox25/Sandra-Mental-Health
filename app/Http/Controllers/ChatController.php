@@ -244,8 +244,9 @@ class ChatController extends Controller
     //this funcion for detect if the user active or not 
     public function isActive($id)
     {
-
-    }
+        // i solve this problem from login function 
+        // i will adding attributes for the patients and doctors tables it is available and the value will changed when login(1) or logout(0)
+     }
 
 
 }

@@ -34,25 +34,32 @@ class Article extends Model
     }
     public function checkAndUpdateStatus()
     {
-            $doctorCount=Doctor::count();
-            $minreviews= min(3,$doctorCount-1);
-            if ($this->reviews_count >= $minreviews && $this->status=='pending' ) {
-                $reviews = $this->reviews;
-    
-                $acceptCount = $reviews->where('status', 'accept')->count();
-                $rejectCount = $reviews->where('status', 'reject')->count();
-    
-                if ($acceptCount == $minreviews) {
-                    $this->status = 'published';
-                } elseif ($rejectCount == $minreviews) {
-                    $this->status = 'rejected';
-                } else {
+        $doctorCount=Doctor::count();
+        $minreviews= min(3,$doctorCount-1);
+        if ($this->reviews_count >= $minreviews && $this->status=='pending' ) {
+            $reviews = $this->reviews;
+            
+            $acceptCount = $reviews->where('status', 'accept')->count();
+            $rejectCount = $reviews->where('status', 'reject')->count();
+            if ($acceptCount == $minreviews) {
+                $this->status = 'published';
+            } elseif ($rejectCount == $minreviews) {
+                $this->status = 'rejected';
+            } else {
+                $avgAcceptPoints = $reviews->where('status', 'accept')->avg('doctor.points');
+                $avgRejectPoints = $reviews->where('status', 'reject')->avg('doctor.points');
+                $pointDifference = abs($avgAcceptPoints - $avgRejectPoints);
+                
+                if ($pointDifference <= 10) {
                     $this->status = 'adminChoice';
+                } elseif ($avgAcceptPoints > $avgRejectPoints) {
+                    $this->status = 'published';
+                } else {
+                    $this->status = 'rejected';
                 }
-    
-                $this->save();
+                
             }
-        
-        
+            $this->save();
+        }       
     }
 }

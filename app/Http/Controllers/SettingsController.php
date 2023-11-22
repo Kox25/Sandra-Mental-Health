@@ -48,6 +48,8 @@ class SettingsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+     //show doctor's info
     public function show(Request $request)
     {
         $validator = $request->validate([
@@ -78,6 +80,8 @@ class SettingsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+     //change account password
     public function ChangePassword(Request $request)
     {
         $validator = $request->validate([
@@ -123,10 +127,14 @@ class SettingsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+     
     public function updatePersonal(Request $request, $id)
     {
         //
     }
+    
+    //change doctor's info 
     public function updateAccount(Request $request)
     {
         $userType=$request->input('userType');
@@ -176,6 +184,8 @@ class SettingsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+     //delete the account
     public function destroy(Request $request)
     {
         

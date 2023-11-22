@@ -30,7 +30,7 @@ const PendingArticles = () => {
                     userID,
                     userType,
                 });
-                console.log(response.data["Articles"]);
+                console.log(response);
                 if (response.data["status"] !== 200) {
                     Swal.fire(response.data.message);
                 } else {
@@ -79,8 +79,8 @@ const PendingArticles = () => {
                                     image={item.image}
                                     content={item.content}
                                     date={item.date}
-                                    accept={item.acceptCount}
-                                    reject={item.rejectCount}
+                                    accept={item.acceptCount??null}
+                                    reject={item.rejectCount??null}
                                 />
                             ))}
                         </div>

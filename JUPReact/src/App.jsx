@@ -10,18 +10,15 @@ import {
 import ArticleContent from "./pages/ArticleContent/ArticleContent";
 import RootLayout from "./pages/RootLayout/RootLayout";
 import AddArticle from "./pages/AddArticle/AddArticle";
-import SLogin from "./pages/login/SLogin";
+import Login from "./pages/login/Login";
 import EditArticle from "./pages/editArticle/editArticle";
 import EditArticleContent from "./pages/editArticle/editArticleContent";
-import Login from "./pages/login/Login";
-import Signup from "./pages/SignUp/userSignUp/Signup";
-import SignupDoctor from "./pages/SignUp/doctorSignUp/SignupDoctor";
 import User from "./pages/User/User";
 import Admin from "./pages/Admin/Admin";
 import Doctor from "./pages/Doctor/Doctor";
 import Home from "./pages/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SSignUp from "./pages/SignUp/sirenSignup/SignUp";
+import SignUp from "./pages/SignUp/SignUp";
 import Settings from "./pages/profileInfo/profileInfo";
 import PendingArticles from "./pages/pendingArticless/PendingArticles/pendingArticles";
 import PArticleContent from "./pages/pendingArticless/ArticleContent/ArticleContent";
@@ -45,9 +42,8 @@ const router = createBrowserRouter(
                 path="articles/:category/:id/update/content"
                 element={<EditArticleContent />}
             />
-            <Route path="/login" element={<SLogin />} />
-            <Route path="/signup" element={<SSignUp />} />
-            <Route path="/signup/doctor" element={<SignupDoctor />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/doctor" element={<Doctor />} />
             <Route path="/user" element={<User />} />

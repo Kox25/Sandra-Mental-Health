@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\File;
 class PendingArticlesController extends Controller
 {
     
+    //show all pending articles for doctors and admin
     public function showPending(Request $request)
     {
         $userID=intval($request->userID);
@@ -48,10 +49,11 @@ class PendingArticlesController extends Controller
                 $rejectCount=0;
                 foreach($article->reviews as $review){
                     if($review->status==="accept"){
-                        $acceptCount+=1;
+                        $acceptCount=$acceptCount+1;
+                        
                     }
                     else{
-                        $rejectCount+=1;
+                        $rejectCount=$rejectCount+1;
                     }
                 }
                 $textPath = $article->content;
@@ -68,6 +70,7 @@ class PendingArticlesController extends Controller
         }
     }
     
+    //show doctor's articles with specific status('pending','published','rejected','all')
     public function showDoctorArticles(Request $request)
     {
         $userID=intval($request->userID);
@@ -115,7 +118,7 @@ class PendingArticlesController extends Controller
         }
     }
     
-     //show specific article by id
+     //show content of specific pending article
     public function pendingContent($ArticleID,Request $request)
     {
         $userID=$request->userID;
@@ -162,6 +165,8 @@ class PendingArticlesController extends Controller
              return response()->json(['status'=>200,'Article'=>$Article,'path'=>$textPath]);
          }
      }
+
+     //accept specific pending article(doctor,admin)
      public function articleAccept($ArticleID,Request $request)
      {
          $userID=$request->doctorID;
@@ -211,6 +216,7 @@ class PendingArticlesController extends Controller
          
      }
      
+     //reject specefic pending article (doctor,admin)
      public function articleReject($ArticleID,Request $request)
      {
          $userID=$request->doctorID;

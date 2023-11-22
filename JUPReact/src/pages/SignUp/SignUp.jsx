@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./SignUp.css";
 import { useNavigate } from "react-router-dom";
-import axiosClient from "../../../axios";
+import axiosClient from "../../axios";
 import "sweetalert2/src/sweetalert2.scss";
-import SignUpLoginForm from "../../../Components/Forms/SignUpLoginForm/SignUpLoginForm";
+import SignUpLoginForm from "../../Components/Forms/SignUpLoginForm/SignUpLoginForm";
 
-const SSignUp = () => {
+const SignUp = () => {
     useEffect(() => {
         if (localStorage.getItem("user-info")) {
             navigate("/login");
@@ -161,4 +161,4 @@ const SSignUp = () => {
         </div>
     );
 };
-export default SSignUp;
+export default SignUp;

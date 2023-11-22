@@ -1,0 +1,15 @@
+.body {
+    overflow-x: hidden;
+
+    width: 100vw;
+    background-image: url("../images/Forms/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+

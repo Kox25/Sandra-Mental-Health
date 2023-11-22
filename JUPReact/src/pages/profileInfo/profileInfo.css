@@ -1,0 +1,162 @@
+.profileInfo .bodyContainer {
+    min-height: 80vh;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 12vh;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 8px 2px #6f6f6f82;
+    background-color: #558da39e;
+    width: 80vw;
+    justify-content: center;
+    justify-self: center;
+    color: #0d4155;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+.profileInfo .partsPart {
+    width: 25vw;
+    padding: 5vh 1.5vw;
+}
+.profileInfo .fieldsPart {
+    width: 60vw;
+    padding: 4vh 2.2vw;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    display: grid;
+}
+.profileInfo .div {
+    border: 1px solid #c9c9c9c8;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.profileInfo .partTitle {
+    margin-left: 0.5vw;
+    font-size: max(3vmin, 12px);
+    font-weight: 500;
+    margin-bottom: 2vh;
+    color: white;
+}
+.profileInfo .j {
+    display: grid;
+    justify-content: center;
+    border: #194c619e 2px solid;
+    width: 40vw;
+    height: fit-content;
+    padding: 5vh;
+    border-radius: 20px;
+    background-color: rgb(247, 247, 240);
+    box-shadow: 0px 0px 8px 6px #6f6f6f82 inset;
+}
+.profileInfo .title {
+    font-size: max(3vmin, 14px);
+    color: #0d4155;
+    font-weight: 600;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+.profileInfo .part {
+    height: 8vh;
+    align-items: center;
+    border: none;
+    width: 100%;
+    text-align: start;
+    border-bottom: #c9c9c9c8 solid 2px;
+    display: grid;
+    padding-left: 1vw;
+    color: #1c627e;
+    font-size: max(2vmin, 12px);
+    font-weight: 500;
+    background-color: #5d8da000;
+    color: white;
+}
+.profileInfo label {
+    margin-bottom: 2vh;
+}
+.profileInfo .input {
+    background-color: rgba(0, 0, 0, 0.036);
+    margin-bottom: 0.2vh;
+    box-shadow: 0 4px 5px 0 #4e798877;
+    height: 6vh;
+    font-size: max(2vmin, 11px);
+    border: none;
+    width: 30vw;
+    margin-bottom: 5vh;
+    padding-left: 2vw;
+}
+.profileInfo form {
+    display: grid;
+}
+.profileInfo .saveButton {
+    font-weight: 500;
+    padding: 0.5vh 1vw;
+    background-color: #b9f7eb;
+    border-radius: 6px;
+    min-height: 25px;
+    font-size: max(2vmin, 13px);
+    font-weight: 600;
+    background-image: linear-gradient(140deg, #b9f7eb8c 20%, #87bed28c 60%);
+    color: #0d4155;
+    border: none;
+    height: 5vh;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+    min-width: 70px;
+    width: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+}
+.profileInfo .saveButton:disabled {
+    background-image: linear-gradient(140deg, #c8c8c8 20%, #949494 60%);
+    color: rgb(228, 228, 228);
+}
+.profileInfo .check {
+    margin-bottom: 3vh;
+}
+.profileInfo .check input {
+    margin-right: 1vw;
+}
+.profileInfo .chossen {
+    background-color: #38768f49;
+    color: white;
+}
+
+.profileInfo .contactBody {
+    width: 30vw;
+    font-size: max(2.3vmin, 14px);
+    color: black;
+    font-weight: 400;
+    display: flex;
+    margin-left: 2vw;
+    margin-bottom: 4vh;
+}
+.profileInfo .contactBody2 {
+    width: 30vw;
+    font-size: max(2.3vmin, 14px);
+    color: black;
+    font-weight: 400;
+    display: flex;
+    margin-left: 2vw;
+}
+.profileInfo .contactdiv {
+    border-bottom: #0d4155 1px solid;
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.profileInfo .contact {
+    font-size: max(2.2vmin, 14px);
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+    font-weight: 400;
+    text-align: center;
+}
+.profileInfo .loading {
+    height: 7vh;
+    padding-left: 8vw;
+}

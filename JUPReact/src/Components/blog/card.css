@@ -1,0 +1,86 @@
+.boxItems {
+    margin: 5% 8%;
+    border-radius: 10px;
+    background-color: #ffffffc8;
+    transition: 0.5s;
+    text-decoration: none;
+    overflow: auto; 
+    word-wrap: break-word;
+    color: #000000;
+    box-shadow: 0px 0px 10px 4px #87bed282;
+
+}
+.boxItems:hover {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.boxItems .details {
+    padding: 0 7% 2vmin 8%;
+}
+.boxItems .details2 {
+    padding: 0 1vmin 0vmin 1vmin;
+}
+.boxItems img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.2vmin;
+    aspect-ratio: 2/1;
+}
+.boxItems .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.boxItems .tag {
+    color: #1c627e;
+
+    margin-bottom: 0.5vmin;
+    display: flex;
+    align-items: center;
+    font-size: max(1.8vmin,14px);
+
+}
+.boxItems p {
+    color: #000000;
+    font-weight: 400;
+    margin: 2.5vmin 0.8vmin;
+    font-size: max(2.2vmin,14px);
+    line-height: 25px;
+}
+.boxItems .date {
+    display: flex;
+    align-items: center;
+    color: #1c627e;
+}
+.boxItems .date label {
+    display: block;
+    margin-right: auto;
+    font-size: max(2vmin,12px);
+    color: #1c627e;
+
+}
+
+.boxItems .userIcon {
+    display: flex;
+    flex-direction: row;
+    height: 4vmin;
+    margin-bottom: 2vmin;
+    font-size: max(1.9vmin,16px);
+    margin: 2vmin 0vmin;
+}
+.boxItems .userIcon img {
+    height: 4vmin;
+    width: 4vmin;
+    margin-right: 2vmin;
+}
+
+.boxItems .titlePart {
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: max(2.5vmin,16px);
+    color: #1c627e;
+}

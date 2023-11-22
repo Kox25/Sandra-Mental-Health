@@ -1,0 +1,33 @@
+.likebutton .button {
+    background: none;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+}
+.likebutton .dislikeicon {
+    background: none;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    margin-right: 0.5vmin;
+}
+.likebutton .likeicon {
+    background-color: rgba(240, 248, 255, 0);
+    background: none;
+    color: rgb(193, 15, 15);
+    border: none;
+    margin-right: 0.5vmin;
+}
+.likebutton .like {
+    display: flex;
+    align-items: center;
+    background: none;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+}
+
+.likebutton .dislike {
+    display: flex;
+    align-items: center;
+    background: none;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+}

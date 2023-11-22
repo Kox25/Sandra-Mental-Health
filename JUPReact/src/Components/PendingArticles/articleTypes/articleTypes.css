@@ -1,0 +1,27 @@
+.Types {
+    border-radius: 20px;
+    padding: 4vh 2vw;
+    font-size: max(3.5vmin, 13px);
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 600;
+    color: #115069;
+}
+.Type {
+    margin-top: 2vh;
+}
+.Type button {
+    font-size: max(3vmin, 12px);
+    border: none;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: rgba(240, 248, 255, 0);
+    color: #1c627e;
+}
+.Type .selected {
+    border: none;
+    color: #1c627e;
+    font-size: max(3vmin, 13px);
+    font-weight: 500;
+    border-bottom: 1px solid #1c627e;
+
+}

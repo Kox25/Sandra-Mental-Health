@@ -1,0 +1,21 @@
+.footer .mt-3 {
+    padding-top: 4%;
+
+}
+.footer a,
+h6,
+p {
+    color: black;
+    text-decoration: none;
+}
+.footer .footerlogo {
+    width: 30%;
+    aspect-ratio: 1;
+}
+#footer {
+    position: sticky;
+    bottom: 0px;
+    background-color: #ffffffd5;
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.2);
+
+}

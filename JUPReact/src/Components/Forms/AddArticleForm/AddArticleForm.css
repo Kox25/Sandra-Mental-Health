@@ -1,0 +1,221 @@
+.FormCol {
+    text-align: center;
+    color: #0d4155;
+    align-items: center;
+    text-wrap: nowrap;
+    padding: 5vh 10vw;
+    font-weight: 500;
+    font-size: max(2.3vmin, 13px);
+}
+.FormCol .title {
+    margin-bottom: 7vh;
+}
+.FormCol .catPart {
+    display: flex;
+    width: 40vw;
+    margin-bottom: 5vh;
+    align-items: center;
+}
+.FormCol .titlePart {
+    display: flex;
+    width: 40vw;
+    margin-bottom: 5vh;
+    align-items: center;
+}
+.FormCol input,
+select {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #0d4155;
+    border: 1px solid #0d4155;
+    border-radius: 10px;
+    height: 6vh;
+    margin-left: 2vw;
+    font-size: max(2vmin, 12px);
+    padding-left: 1vw;
+    box-shadow: 0 4px 5px 0 #4e798877;
+}
+.FormCol input:focus,
+select:focus {
+    outline: none;
+}
+.FormCol select option {
+    color: #0d4155;
+    font-size: max(2vmin, 11px);
+    font-weight: 500;
+    background-color: #fff7da49;
+}
+
+.FormCol input::placeholder {
+    color: #0d4155;
+}
+
+.FormCol option:checked {
+    background-color: #0d4155;
+    color: #ffffff;
+}
+.FormCol select::backdrop {
+    background-color: #0d4155;
+    color: #ffffff; /* Replace with your desired text color */
+}
+.FormCol button {
+    color: #0d4155;
+    font-size: max(3vmin, 12px);
+    font-weight: 500;
+    width: 100%;
+    height: 6vmin;
+    border-radius: 10px;
+    border: none;
+    padding: 0 auto;
+}
+.FormCol .contentPart {
+    color: #0d4155;
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    height: 6vh;
+}
+
+.FormCol .contentPart input {
+    width: 100%;
+    margin-left: 3vw;
+    color: #0d4155;
+    height: min-content;
+    padding-left: 0;
+}
+
+.FormCol .contentbutton::-webkit-file-upload-button {
+    visibility: hidden;
+    display: none;
+}
+.FormCol .contentbutton::before {
+    content: "Select text file";
+    display: inline-block;
+    background-color: #b9f7eb;
+    background-image: linear-gradient(140deg, #b9f7eb8c 20%, #87bed28c 60%);
+    color: #0d4155;
+    padding: 1.4vh 1vw;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: max(2vmin, 10px);
+    margin-right: 5px;
+}
+
+.FormCol .contentbutton:active::before {
+    background-color: #b9f7eb;
+    background-image: linear-gradient(140deg, #72d9c58c 20%, #35839f8c 60%);
+}
+
+.FormCol .imagePart {
+    color: #0d4155;
+    display: flex;
+    margin-bottom: 5vmin;
+    align-items: center;
+}
+
+.FormCol .imagePart input {
+    display: none;
+}
+.FormCol .imagebuttons{
+    width: min-content;
+    position: relative;
+
+}
+.FormCol .imageButton {
+    background-color: rgba(255, 255, 255, 0);
+    color: #0d4155;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px dotted #0d4155;
+    border-radius: 10px;
+    width: 10vmin;
+    height: 10vmin;
+    font-size: max(2vmin, 11px);
+    margin-left: 1.5rem;
+    box-shadow: 0 0px 5px 0 #4e798877 inset;
+}
+.FormCol .imagePart img {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px dotted rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 10vmin;
+    aspect-ratio: 1;
+    cursor: pointer;
+    font-size: max(2vmin, 13px);
+}
+.FormCol .setimg{
+}
+.FormCol .imgText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -50%);
+
+}
+
+.FormCol .remove button {
+    font-size: max(1.8vmin, 11px);
+    width: max(3vmin, 20px);
+    height: max(3vmin, 20px);
+    border: #0d4155 1px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translate(-70%, -30%);
+}
+.FormCol .submitPart {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+.FormCol .submitPart button {
+    font-weight: 500;
+    padding: 1vh 2vw;
+    margin: 5vmin 2.5vmin 0vmin 2.5vmin;
+    background-color: #b9f7eb;
+    background-image: linear-gradient(140deg, #b9f7eb8c 20%, #87bed28c 60%);
+    color: #0d4155;
+    width: min-content;
+    border-radius: 6px;
+    min-height: 30px;
+    font-size: max(2.3vmin, 12px);
+    font-weight: 600;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+
+}
+.FormCol .submitPart button:active::before {
+    background-color: #b9f7eb;
+    background-image: linear-gradient(140deg, #72d9c58c 20%, #35839f8c 60%);
+}
+
+@media screen and (max-width: 750px) {
+    .FormCol {
+        padding: 0vh 2vw;
+    }
+
+    .FormCol .title {
+        margin-bottom: 4vh;
+    }
+    .FormCol .catPart {
+        width: 80vw;
+    }
+    .FormCol .titlePart {
+        width: 80vw;
+    }
+    .FormCol .contentPart {
+        width: 80vw;
+    }
+}

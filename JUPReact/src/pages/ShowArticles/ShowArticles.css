@@ -1,0 +1,9 @@
+.ShowArticles {
+    margin-top: 10vmin;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .ShowArticles {
+        margin-top: 20%;
+    }
+}

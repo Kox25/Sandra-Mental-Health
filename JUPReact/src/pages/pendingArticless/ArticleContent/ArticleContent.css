@@ -1,0 +1,124 @@
+.pendingContent {
+    margin: 13vh 6vw;
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 20px;
+    padding: 7vh 5vw;
+    display: grid;
+    justify-content: center;
+    box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pendingContent .image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
+
+.pendingContent .contentPart {
+    display: flex;
+    padding-top: 5vh;
+    width: 80vw;
+}
+.pendingContent .info {
+    width: 55vw;
+}
+.pendingContent .title {
+    font-size: 3.5vmin;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0d4155;
+}
+.pendingContent .cat {
+    font-size: 2.5vmin;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(80, 80, 80);
+}
+.pendingContent .icon {
+    size: 2.5vmin;
+    margin-right: 5px;
+}
+.pendingContent img {
+    width: 60vw;
+    aspect-ratio: 2/1;
+    border-radius: 20px;
+}
+.pendingContent .content {
+    font-size: 2.6vmin;
+    margin-bottom: 10vmin;
+    white-space: pre-wrap;
+    overflow: auto; /* إما auto أو hidden لمنع الخروج من ال div */
+    word-wrap: break-word;
+}
+.pendingContent .publisher {
+    font-size: 2.2vmin;
+    margin-bottom: 2vmin;
+    color: rgb(80, 80, 80);
+}
+.pendingContent .date {
+    font-size: 2.2vmin;
+    color: rgb(80, 80, 80);
+}
+.pendingContent .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pendingContent .button {
+    margin: 4vh 2vw 0vh 2vw;
+    padding: 0.5vh 1vw;
+    background-color: #b9f7eb;
+    min-height: 25px;
+    font-size: max(2.3vmin, 8px);
+    font-weight: 600;
+    background-image: linear-gradient(140deg, #b9f7eb8c 20%, #87bed28c 60%);
+    color: #0d4155;
+    border: none;
+    height: 5vmin;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+@media screen and (max-width: 750px) {
+    .pendingContent .image {
+        width: 90vw;
+        display: grid;
+        justify-content: center;
+    }
+    .pendingContent {
+        padding: 5vmin;
+    }
+    .pendingContent img {
+        width: 80vw;
+    }
+    .pendingContent .contentPart {
+        width: 90vw;
+        display: grid;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pendingContent .contentPart .notes {
+        margin-left: auto;
+        margin-right: auto;
+        width: 74vw;
+    }
+    .pendingContent .contentPart .note {
+        border: #9b9b9b 1px solid;
+        border-radius: 10px;
+        padding: 2vmin;
+        background-color: #dedede9a;
+        margin-bottom: 3vh;
+    }
+    .pendingContent .info {
+        border-bottom: #000000 1px solid;
+        padding-bottom: 5vh;
+        margin-bottom: 3vh;
+        width: 78vw;
+    }
+    .pendingContent .button{ margin-top: 0;}
+    .pendingContent .contentPart .notesTitle {
+        margin-bottom: 3vh;
+    }
+}

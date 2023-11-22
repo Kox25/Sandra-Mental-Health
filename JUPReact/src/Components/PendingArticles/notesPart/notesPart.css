@@ -1,0 +1,47 @@
+
+.notes {
+    width: 30vw;
+}
+.notes .notesTitle {
+    font-size: max(3.2vmin, 14px);
+    color: #0d4155;
+    font-weight: 700;
+    margin-bottom: 5vh;
+}
+.notes .note {
+    margin-bottom: 5vh;
+    padding-bottom: 5vh;
+    border-bottom: 1px solid rgb(163, 163, 163);
+
+    white-space: pre-wrap;
+    overflow: auto;
+    word-wrap: break-word;
+}
+.notes .note .reviewNumber {
+    font-size: max(2.5vmin, 12px);
+    color: #3b3b3b;
+    font-weight: 600;
+    margin-bottom: 1.4vh;
+}
+.notes .note .noteInfo {
+    font-size: max(2.2vmin, 10px);
+    color: #656565;
+    margin-bottom: 0.4vh;
+    font-weight: 600;
+    display: flex;
+}
+.notes .note .accept {
+    color: #177625;
+}
+.notes .note .reject {
+    color: #971b1b;
+}
+.notes .note .title {
+    font-size: max(2.3vmin, 11px);
+    text-wrap: nowrap;
+    color: #4e4d4d;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    margin-right: 1vw;
+}

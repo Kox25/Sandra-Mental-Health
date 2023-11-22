@@ -1,0 +1,67 @@
+.Categories {
+    margin: 10% 5% 5% 5%;
+    border-radius: 20px;
+    padding: 3% 5% 3% 5%;
+    background-color: #ffffffd5;
+    box-shadow: 0px 0px 10px 4px #87bed282;
+    
+}
+.Categories .titleAdd {
+    display: flex;
+    font-size: max(2vmin,11px);
+    color: #1c627e;
+    
+}
+.Categories .titleAdd h2 {
+    font-size: max(3.5vmin,16px);
+    color: #1c627e;
+    margin-right: auto;
+    
+}
+
+.Categories .cat {
+    height: auto;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+    font-size: max(2.3vmin,11px);
+    font-weight: 500;
+}
+.Categories .selected {
+    background-color: #b9f7eb;
+    border: none;
+    background-image: linear-gradient(140deg, #b9f7eb8c 20%, #87bed28c 60%);
+    border-radius: 6px;
+    padding: 0.5% 1.3% 0.5% 1.3%;
+    margin: 3vmin 1% 0 0;
+    color: #1c627e;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-size: max(2.1vmin, 11px);
+    font-weight: 600;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.Categories h6 {
+    padding-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: max(2.3vmin,11px);
+    font-weight: 500;
+
+}
+.Categories .none {
+    margin-top: 3vmin;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-right: 2%;
+}
+.Categories .titleAdd .link {
+    border: 1px solid #1c627e;
+    border-radius: 6px;
+    padding: 0.5% 1.3% 0.5% 1.3%;
+    margin: auto 1vw;
+    text-decoration: none;
+    color: #1c627e;
+    font-weight: 500;
+}

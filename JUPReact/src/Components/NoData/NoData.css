@@ -1,0 +1,13 @@
+.NoDataContainer {
+    display: grid;
+}
+.NoDataContainer p {
+    padding: 0.5% 1.5%;
+    border-radius: 10px;
+    background-color: #ffffffc8;
+    margin: auto;
+    color: #0d4155;
+    font-size: 3vmin;
+    box-shadow: 4px 4px 5px 0 #4e798877;
+
+}

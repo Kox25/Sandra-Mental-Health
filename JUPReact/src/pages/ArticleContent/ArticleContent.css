@@ -1,0 +1,173 @@
+
+.ArticleContent {
+    margin-top: 15vmin;
+    height: auto;
+}
+@media screen and (max-width: 600px) {
+    .ArticleContent {
+        margin-top: 20%;
+    }
+}
+
+.ArticleContent .ContentSide {
+    height: min-content;
+    background-color: white;
+    margin-right: 5vmin;
+    margin-left: 5vmin;
+    border-radius: 20px;
+    margin-bottom: 5vmin;
+}
+.ArticleContent .ArticlesSide {
+    background-color: white;
+    margin-left: auto;
+    margin-right: 5vmin;
+    border-radius: 20px;
+    margin-bottom: 5vmin;
+    height: min-content;
+}
+.ArticleContent .contentContainer {
+    margin: 5vmin 2vmin;
+}
+.ArticleContent .title {
+    font-size: 3.5vmin;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #0d4155;
+}
+.ArticleContent .catLikes {
+    width: 80vmin;
+    justify-content: space-between;
+    display: flex;
+}
+.ArticleContent .cat {
+    font-size: 2.5vmin;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(80, 80, 80);
+}
+.ArticleContent .icon {
+    size: 2.5vmin;
+    margin-right: 5px;
+}
+.ArticleContent .reports {
+
+    font-size: 3.2vmin;
+    padding: 0;
+}
+
+.ArticleContent .reports .icon {
+    size: 3vmin;
+}
+.ArticleContent .likes {
+    font-size: 3.2vmin;
+    padding: 0;
+}
+.ArticleContent .likes .icon {
+    size: 3vmin;
+}
+.ArticleContent img {
+    width: 100%;
+    aspect-ratio: 1.8/1;
+    border-radius: 20px;
+}
+
+.ArticleContent .info {
+    margin: 0px 2vmin;
+}
+.ArticleContent .content {
+    font-size: 2.6vmin;
+    margin-bottom: 10vmin;
+    white-space: pre-wrap;
+    overflow: auto; 
+    word-wrap: break-word;
+}
+.ArticleContent .publisher {
+    font-size: 2.2vmin;
+    margin-bottom: 2vmin;
+    color: rgb(80, 80, 80);
+}
+.ArticleContent .date {
+    font-size: 2.2vmin;
+    color: rgb(80, 80, 80);
+}
+
+.ArticleContent .related {
+    margin: 5vmin 2vmin;
+}
+.ArticleContent .relatedTitle {
+    margin-bottom: 2vmin;
+    font-size: 3.2vmin;
+    font-weight: 500;
+}
+.ArticleContent .cards {
+    border-bottom: 1px solid black;
+}
+.ArticleContent .selected {
+    background-color: rgba(237, 215, 250, 0.663);
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 6px;
+    color: black;
+    font-size: 2.5vmin;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    padding: 12px 16px;
+    width: 100%;
+    border-bottom: 0.5px solid rgb(232, 232, 232);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .listChoice {
+    background: none;
+    color: black;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+}
+.dropdown-menu .listChoice::after {
+    background: none;
+    color: black;
+    border: none;
+}
+.dropdown-menu .listChoice:hover {
+    background: none;
+    color: black;
+    border: none;
+}
+.dropdown-menu .listChoice::before {
+    background: none;
+    color: black;
+    border: none;
+}
+.dropdown-menu .listChoice:active {
+    background: none;
+    color: black;
+    border: none;
+}

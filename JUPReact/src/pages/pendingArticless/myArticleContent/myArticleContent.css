@@ -1,0 +1,136 @@
+.myPendingArticleContent {
+    margin: 13vh 6vw;
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 20px;
+    padding: 7vh 5vw;
+    display: grid;
+    justify-content: center;
+    box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.myPendingArticleContent .image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
+
+.myPendingArticleContent .contentPart {
+    display: flex;
+    padding-top: 5vh;
+    width: 80vw;
+    
+}
+.myPendingArticleContent .info {
+    width: 55vw;
+}
+.myPendingArticleContent .title {
+    font-size: 3.5vmin;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0d4155;
+}
+.myPendingArticleContent .cat {
+    font-size: 2.5vmin;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(80, 80, 80);
+}
+.myPendingArticleContent .icon {
+    size: 2.5vmin;
+    margin-right: 5px;
+}
+.myPendingArticleContent img {
+    width: 60vw;
+    aspect-ratio: 2/1;
+    border-radius: 20px;
+}
+.myPendingArticleContent .content {
+    font-size: 2.6vmin;
+    margin-bottom: 10vmin;
+    white-space: pre-wrap;
+    overflow: auto; /* إما auto أو hidden لمنع الخروج من ال div */
+    word-wrap: break-word;
+}
+.myPendingArticleContent .publisher {
+    font-size: 2.2vmin;
+    margin-bottom: 2vmin;
+    color: rgb(80, 80, 80);
+}
+.myPendingArticleContent .date {
+    font-size: 2.2vmin;
+    color: rgb(80, 80, 80);
+}
+.myPendingArticleContent .statusPart{
+    width: 80vw;
+    justify-content: center;
+    display: grid;
+}
+.myPendingArticleContent .docStatus {
+    font-size: max(2.8vmin, 10px);
+    font-weight: 600;
+    color:black;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:1vh 2.5vw;
+    width: min-content;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
+
+}
+.myPendingArticleContent .accept {
+    color: #177625;
+    border: 1px solid #177625;
+
+}
+.myPendingArticleContent .reject {
+    color: #971b1b;
+    border: 1px solid #971b1b;
+
+}
+
+@media screen and (max-width: 750px) {
+    .myPendingArticleContent .image {
+        width: 90vw;
+        display: grid;
+        justify-content: center;
+    }
+    .myPendingArticleContent {
+        padding: 5vmin;
+    }
+    .myPendingArticleContent img {
+        width: 80vw;
+    }
+    .myPendingArticleContent .contentPart {
+        width: 90vw;
+        display: grid;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .myPendingArticleContent .contentPart .notes {
+        margin-left: auto;
+        margin-right: auto;
+        width: 74vw;
+    }
+    .myPendingArticleContent .contentPart .note {
+        border: #9b9b9b 1px solid;
+        border-radius: 10px;
+        padding: 2vmin;
+        background-color: #dedede9a;
+        margin-bottom: 3vh;
+    }
+    .myPendingArticleContent .info {
+        width: 78vw;
+    }
+    .myPendingArticleContent .docStatus {
+  
+        margin-top: 3vh;
+        margin-bottom:1vh;
+    
+    }
+    .myPendingArticleContent .contentPart .notesTitle {
+        margin-bottom: 3vh;
+    }
+}

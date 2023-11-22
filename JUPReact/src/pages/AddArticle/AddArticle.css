@@ -1,0 +1,93 @@
+.AddArticlebod {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    padding-top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+}
+.AddArticle {
+    background-color: #ffffffc8;
+    width: 85vw;
+    height: 80vh;
+    border-radius: 20px;
+    margin-top: 13vh;
+    color: black;
+    display: flex;
+    box-shadow: 0px 0px 9px 5px #00000030  ;
+
+}
+
+.AddArticle .pic {
+    width: 40vw;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    background-image: url("../images/Forms/AddArticle.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    z-index: 1000;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: max(2.5vmin,13px);
+    text-align: center;
+    white-space: pre-wrap;
+    box-shadow: 0 -5px 10px 7px #00000030 inset;
+
+
+}
+
+.AddArticle .right {
+    width: 48vw;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+    .bod {
+        padding-top: 15vh;
+        height: auto;
+        background-color: #01010100;
+    }
+    .AddArticle {
+        background-color: #ffffffc8;
+        width: 95vw;
+        height: auto;
+        border-radius: 20px;
+        align-items: center;
+        align-self: center;
+        align-self: baseline;
+        justify-items: center;
+        justify-content: center;
+        color: black;
+        box-shadow: 0px 0px 10px 8px #87bed249;
+        display: grid;
+        place-items: center;
+        margin-bottom: 5vh;
+    }
+
+    .AddArticle .pic {
+        background-color: #fff7da;
+        background-image: url("../images/Forms/GirlWide.png");
+        background-size: 95vh;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        z-index: 1000;
+        width: 95vw;
+        height: 65vh;
+        padding-top: 2vmin;
+        transition: transform 0.5s ease-in-out;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .AddArticle .right {
+        width: 100%;
+        padding: 5vh 5vw;
+        height: 65vh;
+    }
+}

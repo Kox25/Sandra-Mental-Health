@@ -1,0 +1,90 @@
+.myArticleCard {
+    display: flex;
+    padding: 4vh 2vw;
+}
+.myArticleCard .image,
+.myArticleCard img {
+    width: 20vw;
+    border-radius: 15px;
+    margin-right: 2vw;
+    height: 24vh;
+}
+.myArticleCard .name {
+    font-size: max(2.7vmin, 17px);
+    font-weight: 600;
+    color: #1c627e;
+    padding-bottom: 1.5vh;
+}
+.myArticleCard .info {
+    overflow: auto; /* إما auto أو hidden لمنع الخروج من ال div */
+    word-wrap: break-word;
+    font-size: max(2.2vmin, 13px);
+    color: black;
+    padding-bottom: 0.6vh;
+}
+.myArticleCard .category {
+    font-size: max(2.1vmin, 12px);
+    color: rgb(80, 80, 80);
+    padding-bottom: 2vh;
+}
+
+.myArticleCard .icon {
+    margin-right: 10px;
+    font-size: max(2.5vmin, 13px);
+}
+.myArticleCard .category .icon {
+    width: max(2vmin, 11px);
+}
+.myArticleCard .datestatus{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+}
+.myArticleCard .status {
+    font-size: max(2.2vmin, 13px);
+    color: black;
+    padding:0.5% 1%;
+    
+    border: black 1px solid;
+    border-radius: 5px;
+    
+}
+.myArticleCard .date {
+    color: rgb(116, 116, 116);
+    font-size: max(2.1vmin, 12px);
+    display: flex;
+    align-items: center;
+}
+.myArticleCard .acceptStatus {
+    color: #177625;
+    border: #177625 1px solid;
+    border-radius: 5px;
+
+}
+.myArticleCard .rejectStatus {
+    color: #971b1b;
+    
+    border: #971b1b 1px solid;
+    border-radius: 5px;
+}
+
+.none {
+    border-bottom: 1px black solid;
+}
+@media screen and (max-width: 750px) {
+    .myArticleCard {
+        display: block;
+        padding: 3vh 5vw;
+        
+    }
+    .myArticleCard .image,
+    .myArticleCard img {
+        width: 80vw;
+        border-radius: 15px;
+        height: 24vh;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2vh;
+        
+    }
+}

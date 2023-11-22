@@ -1,0 +1,74 @@
+nav {
+    background-color: rgb(124, 171, 245);
+    width: 80%;
+    height: auto;
+    border-radius: 0px 0px 20px 20px;
+    color: rgb(0, 0, 0);
+    margin: auto;
+}
+
+nav .logosandra {
+    height: 45px;
+    aspect-ratio: 2/1.5;
+    border-radius: 10px;
+}
+
+nav .tomargin {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+nav .linka {
+    color: rgb(0, 0, 0);
+}
+
+nav .linka:hover {
+    color: var(--sec-color);
+}
+
+nav .active {
+    color: var(--sec-color) !important;
+}
+
+nav .decor {
+    color: #000000;
+    font-size: 100%;
+    position: relative;
+    line-height: 40px;
+    transition: 0.3s ease all;
+}
+
+nav .decor::before {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    width: 260px;
+    height: 4px;
+    color: var(--sec-color);
+    background-color: var(--main-color);
+}
+
+nav .decor:hover {
+    color: var(--sec-color);
+}
+
+nav #basic-nav-dropdown {
+    color: rgb(0, 0, 0);
+}
+
+nav #basic-nav-dropdown:hover {
+    color: var(--sec-color);
+}
+
+nav .dropdown-menu {
+    background-color: white;
+    border: none;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+    }
+}
